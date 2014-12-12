@@ -186,7 +186,7 @@ entityDef weapon_machinegun
 entityDef weapon_machinegun_mp
 {
 	"inherit"				"weapon_machinegun"
-	"clipsize"				"0"
+	"clipsize"				"10"
   	"def_mod1"				""
   	"inv_icon"				"gfx/guis/hud/icons/item_machinegun_colored"
   	"mtr_simple_icon"		"simpleicons/item_machinegun_colored"
@@ -214,7 +214,7 @@ entityDef weapon_machinegun_mp
 	"respawn_Team DM"			"30"
 	"respawn_Tourney"			"15"
 	
-	"inv_start_ammo_machinegun"		"100"
+	"inv_start_ammo_machinegun"		"1"
 	
 	// played when you touch a weapon you can't acquire, i.e. weaponStay in MP
 	"snd_noAcquire"			"pickup_weaponstay"	

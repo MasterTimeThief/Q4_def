@@ -695,11 +695,11 @@ entityDef player_marine
 	"weapon"						"weapon_blaster"
 	"current_weapon"					"0"
 
-	"pm_jumpheight"						"48"
-	"pm_stepsize"						"16"
-	"pm_speed"						"160"  	//DOOM speed was 140
-	"pm_walkspeed"						"80"
-	"pm_crouchspeed"					"80"
+	"pm_jumpheight"						"0"//was 48
+	"pm_stepsize"						"0"//was 16
+	"pm_speed"						"0"  	//DOOM speed was 140, was 160
+	"pm_walkspeed"						"0"//was 80
+	"pm_crouchspeed"					"0"//was 80
 	"pm_noclipspeed"					"270"	
 	"pm_minviewpitch"					"-89"	// looking up
 //	"pm_maxviewpitch"					"53"	// looking down
@@ -1054,7 +1054,7 @@ entityDef player_marine_mp
 {
 	"inherit"			"player_marine"
 
-	"weapon"			"weapon_machinegun,weapon_gauntlet"
+	"weapon"			"weapon_grenadelauncher,weapon_hyperblaster,weapon_shotgun,weapon_machinegun,weapon_nailgun"
 	"current_weapon"		"1"
 
 	// replce blaster with gauntlet in MP
@@ -1064,7 +1064,7 @@ entityDef player_marine_mp
 	"weapon0_flashlight"					"0"
 
 	// remove MG flashlight in MP
-	"weapon1_flashlight"		"0"
+	"weapon1_flashlight"		"1"
 	
 	// re-add gren, rocket, rail, DMG, and Napalm Launcher to weapon switch list
 	"weapon4_best"			"1"
@@ -1074,24 +1074,24 @@ entityDef player_marine_mp
 	"weapon10_best"			"1"
 
 	// stats
-	"health"			"125"
-	"armor"				"0"
+	"health"			"12"
+	"armor"				"100"
 
 	"ammo_none"			"-1"
-	"ammo_railgun"			"0"
-	"ammo_machinegun"		"100"
-	"ammo_nailgun"			"0"
+	"ammo_railgun"			"1"
+	"ammo_machinegun"		"1"
+	"ammo_nailgun"			"1"
 	"ammo_blaster"			"-1"
-	"ammo_shotgun"			"0"
-	"ammo_hyperblaster"		"0"
-	"ammo_rocketlauncher"		"0"
-	"ammo_grenadelauncher"		"0"
+	"ammo_shotgun"			"1"
+	"ammo_hyperblaster"		"1"
+	"ammo_rocketlauncher"		"1"
+	"ammo_grenadelauncher"		"1"
 
 	"powerup_effect_joints"		"*body -*r_wrist r_wrist -*l_wrist l_wrist"
 
-	"pm_crouchspeed"		"160"
-	"pm_speed"			"320"
-	"pm_walkspeed"			"160"
+	"pm_crouchspeed"		"0"//was 160
+	"pm_speed"			"0"//was 320
+	"pm_walkspeed"			"0"//was 160
 
 	"fx_spawn"			"effects/mp/player/spawn.fx"
 	"fx_teleport"			"effects/mp/player/teleport.fx"
